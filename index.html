@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="shortcut icon" href="images/plane.svg">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="wrap">
+                <div class="logo">
+                    <div class="logo__img">
+                        <img src="images/logo.svg" alt="logo">
+                    </div>
+                    <div class="logo__text">Travel Portal</div>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__row">
+                        <li>
+                            <a class="menu__link" href="#preview">How It Works</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#Plan">Plan Your Trip</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#destinations">Destinations</a>
+                        </li>
+                        <li>
+                            <a class="menu__link" href="#storis">Travel Stories</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div onclick="clikBurger()" class="burger">
+                    <div class="burger__line"></div>
+                    <span class="burger__line"></span>
+                    <div class="burger__line"></div>
+                </div>
+                <div class="menu__btn-log">
+                    <button>Login</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="preview" class="preview">
+                <div class="wrap">
+                    <p>1</p>
+                    <h1 class="preview__title">Explore the beauty of <br> the World</h1>
+                    <div class="preview__text">Receive personalized recommendations for countries, hotels, activities and more</div>
+                    <div class="preview__row">
+                        <input class="preview__search" type="text" placeholder="What would you like to do?">
+                        <div class="preview__btn">
+                            <button>Start Planning</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="Plan" class="steps">
+                <div class="wrap">
+                    <h2 class="steps__title">3 Steps to the perfect trip</h2>
+                    <div class="steps__row">
+                        <div class="steps__block">
+                            <img class="steps__icicon" src="images/Vector1.svg" alt="bicycle">
+                            <div class="steps__subtitle">Tell us what you want to do</div>
+                        </div>
+                        <div class="steps__block">
+                            <img class="steps__icicon" src="images/Vector2.svg" alt="calculator">
+                            <div class="steps__subtitle">Share us preferable dates </div>
+                        </div>
+                        <div class="steps__block">
+                            <img class="steps__icicon" src="images/Vector3.svg" alt="plane">
+                            <div class="steps__subtitle">We will give you recommendations</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="destinations" class="destinations">
+                <div class="wrap">
+                    <h2>Popular destinations</h2>
+                    <div class="destinations__slider">
+                        <div class="destinations__arrows">
+                            <img id="clickLeft" onclick="clickLeft1()" class="destinations__arrow-back" src="images/arrow1.svg" alt="arrow-back">
+                            <img id="clickRight" onclick="clickRight2()" class="destinations__arrow-front" src="images/arrow.svg" alt="arrow-front">
+                        </div>
+                        <picture id="a">
+                            <source media="(max-width: 950px)" srcset="images/slider-1@mv.jpg">
+                            <source media="(min-width: 951px)" srcset="images/slider-1.jpg">
+                            <img class="destinations__imge" src="images/slider-1.jpg" alt="Spain">
+                            <p>Spain</p>
+                        </picture>
+                        <picture id="b">
+                            <source media="(max-width: 950px)" srcset="images/slider-2@mv.jpg">
+                            <source media="(min-width: 951px)" srcset="images/slider-2.jpg">
+                            <img class="destinations__imge" src="images/slider-2.jpg" alt="JAPAN">
+                            <p>Japan</p>
+                        </picture>
+                        <picture id="c">
+                            <source media="(max-width: 950px)" srcset="images/slider-3@mv.jpg">
+                            <source media="(min-width: 951px)" srcset="images/slider-3.jpg">
+                            <img class="destinations__imge" src="images/slider-3.jpg" alt="USA">
+                            <p>USA</p>
+                        </picture>
+                    </div>
+                    <div class="destinations__point">
+                        <button id="Tird" class="destinations__ball disabled-ball"></button>
+                        <button id="Secand" class="destinations__ball active-ball"></button>
+                        <button id="First" class="destinations__ball disabled-ball"></button>
+                    </div>
+                    <div class="destinations__btn">
+                        <button class="destinations__textBtn">
+                            <img src="images/bi_arrow-right.svg" alt="arrow"> 
+                            Find More
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="storis" class="stories">
+                <div id="storis__back" class="storis__back">
+                    <div id="wrap" class="wrap">
+                        <h2>Travel Stories</h2>
+                        <div class="storis__column">
+                            <div class="storis__row">
+                                <div class="storis__imge">
+                                    <picture>
+                                        <source media="(max-width: 886px)" srcset="images/Rectangle15.jpg">
+                                        <source media="(min-width: 887px)" srcset="images/Rectangle29.jpg">
+                                        <img src="images/Rectangle29.jpg" alt="mountains&lake">
+                                    </picture>
+                                </div>
+                                <div class="storis__text">
+                                    <h3>10 Photos of Attractive Thailand</h3>
+                                    <div class="storis__text-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                            anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    </div>
+                                    <div class="storis__more">Read More</div>
+                                </div>
+                            </div>
+                            <div class="storis__row">
+                                <div class="storis__imge">
+                                    <picture>
+                                        <source media="(max-width: 886px)" srcset="images/Rectangle16.jpg">
+                                        <source media="(min-width: 887px)" srcset="images/Rectangle30.jpg">
+                                        <img src="images/Rectangle30.jpg" alt="road">
+                                    </picture>
+                                </div>
+                                <div class="storis__text">
+                                    <h3>Canyonlands National Park, Utah</h3>
+                                    <div class="storis__text-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                            anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    </div>
+                                    <div class="storis__more">Read More</div>
+                                </div>
+                            </div>
+                            <div class="storis__row">
+                                <div class="storis__imge">
+                                    <picture>
+                                        <source media="(max-width: 886px)" srcset="images/Rectangle27.jpg">
+                                        <source media="(min-width: 887px)" srcset="images/Rectangle31.jpg">
+                                        <img src="images/Rectangle31.jpg" alt="mountains">
+                                    </picture>
+                                </div>
+                                <div class="storis__text">
+                                    <h3>I left my heart in the Mountains!</h3>
+                                    <div class="storis__text-text">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                                            anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    </div>
+                                    <div class="storis__more">Read More</div>
+                                </div>
+                            </div>
+                            <div class="storis__row">
+                                <div class="storis__imge">
+                                    <picture>
+                                        <source media="(max-width: 886px)" srcset="images/Rectangle17.jpg">
+                                        <source media="(min-width: 887px)" srcset="images/Rectangle32.jpg">
+                                        <img src="images/Rectangle32.jpg" alt="road">
+                                    </picture>
+                                </div>
+                                <div class="storis__text">
+                                    <h3>The Longest journey in my life!</h3>
+                                    <div class="asd">
+                                        <div class="storis__text-text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                            <div class="storis__more">Read More</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="storis__btn">
+                                <button class="storis__textBtn">
+                                    <img src="images/bi_arrow-right.svg" alt="arrow"> See More 
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <div class="wrap">
+                <p class="footer__text">All Rights Reserved © Travel Portal</p>
+                <div class="footer__row">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/Vector.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="rs_school" href="https://rs.school/js-stage0/">
+                                <img src="images/rs_school_js.svg" alt="rs_school">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kapkande">
+                                <img style="width: 32px;" src="images/github_logo_icon_147285.svg" alt="github">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div onclick="clikBurger()" id="shadow" class="shadow-close"></div>
+        <div class="menuBurger">
+            <div id="menuBurger" class="menuBurger__block close">
+                <div onclick="clikBurger()" class="menuBurger__close">
+                    <img src="images/close.svg" alt="cross">
+                </div>
+                <ul class="menuBurger__row">
+                    <li>
+                        <a onclick="clikBurger()" class="menuBurger__link" href="#preview">How It Works</a>
+                    </li>
+                    <li>
+                        <a onclick="clikBurger()" class="menuBurger__link" href="#Plan">Plan Your Trip</a>
+                    </li>
+                    <li>
+                        <a onclick="clikBurger()" class="menuBurger__link" href="#destinations">Destinations</a>
+                    </li>
+                    <li>
+                        <a onclick="clikBurger()" class="menuBurger__link" href="#storis">Travel Stories</a>
+                    </li>
+                    <li>
+                        <a onclick="clikBurger()" class="menuBurger__link" href="#">Account</a>
+                    </li>
+                    <li>
+                        <a onclick="clikBurger()" class="menuBurger__link" href="#">Social Media</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <script src="js/index.js"></script>
+</body>
+
+</html>
